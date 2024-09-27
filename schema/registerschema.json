@@ -1,0 +1,19 @@
+{
+    "register": {
+        "title": "Register User data",
+        "type": "object",
+        "properties": {
+            "id": { "type": "integer" },
+            "token": { "type": "string" }
+        },
+        "required": ["id", "token"]
+    },
+    "registererr": {
+        "title": "Register User error",
+        "type": "object",
+        "properties": {
+            "error": { "type": "string" }
+        },
+        "required": ["error"]
+    }
+}

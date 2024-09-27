@@ -1,0 +1,31 @@
+## Pre-Installation
+
+1. mkdir kanggo-qa-test
+2. cd kanggo-qa-test
+3. npm init -y
+- created file package.json
+4. npm install selenium-webdriver mocha chai mochawesome mochawesome-merge mochawesome-report-generator --save-dev
+- created file node_modules and package-lock.json
+5. npm install log4js
+6. npm install dotenv
+7. mkdir test
+- created folder test
+8. cd test > touch login.js
+- created file inside folder test
+9. add "type": "module" in package.json
+- for ES module 'import'
+10. add script "test": "mocha test --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=report,html=true,json=true"
+- for reporting using mochawesome with screenshot report
+11. mkdir screenshot
+- for screenshot collection
+
+## Run test
+
+To execute the tests, use:
+* web: npm run test 
+* web: npm run test-api
+
+##note:
+-jika .env tidak terlihat, tambahkan dan masukkan url dibawah
+kanggo_url = https://www.kanggo.id/
+regres_url = https://reqres.in/

@@ -1,0 +1,18 @@
+{
+    "login": {
+        "title": "Login User data",
+        "type": "object",
+        "properties": {
+            "token": { "type": "string" }
+        },
+        "required": ["token"]
+    },
+    "loginerr": {
+        "title": "Login User error",
+        "type": "object",
+        "properties": {
+            "error": { "type": "string" }
+        },
+        "required": ["error"]
+    }
+}
